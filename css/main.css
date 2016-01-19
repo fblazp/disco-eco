@@ -1,3 +1,12 @@
+/*PALETA DE COLORES PARA EL PROYECTO*/
+/*
+	#EE3D40; rgba(238,61,64,1); ----> Hof-red
+	#FFFFFF; rgba(255,255,255,1); --> Blanco
+	#000000; rgba(0,0,0,1); --------> Negro
+	#AABAC5; rgba(170,186,197,1); --> Cold Sky
+*/
+
+/*Estilos generales*/
 body 
 {
 	padding-top:50px;

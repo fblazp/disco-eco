@@ -12,3 +12,10 @@ body
 	background: rgba(0,0,0,0.1) url(../img/texture.png) top left repeat;
 	padding-top: 50px;
 }
+
+/*Header*/
+.logoHeader 
+{
+	max-width: 250px;
+	max-height: 100px;
+}

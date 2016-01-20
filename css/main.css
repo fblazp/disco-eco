@@ -17,7 +17,11 @@ body
 {
 	padding: 50px 0;
 }
-
+.optimize 
+{
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegitibility;
+}
 /*HEADER*/
 #header 
 {
@@ -69,7 +73,8 @@ body
 
 #header h2 	
 {
-	padding-top: 16px;
+	
+	color: rgba(170,186,197,1);
 }
 
 #header h2 i 

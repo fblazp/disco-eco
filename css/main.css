@@ -13,9 +13,39 @@ body
 	padding-top: 50px;
 }
 
-/*Header*/
-.logoHeader 
+/*Redes sociales*/
+#header .socials 
 {
-	max-width: 250px;
-	max-height: 100px;
+	font-size: 2em;
+}
+#header .socials p 
+{
+	margin: 0 8px 0 0;
+	padding-top: 5px;
+}
+
+#header .socials p a 
+{
+	color: white;
+	padding: 0 4px;
+}
+
+#header .socials .facebook:hover
+{
+	color: #3b5998;
+}
+
+#header .socials .twitter:hover 
+{
+	color: #00aced;
+}
+
+#header .socials .instagram:hover 
+{
+	color: #125688;
+}
+
+#header .socials .youtube:hover 
+{
+	color: #bb0000;
 }

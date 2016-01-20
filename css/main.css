@@ -13,6 +13,11 @@ body
 	padding-top: 50px;
 }
 
+/*HEADER*/
+#header 
+{
+	background: rgba(170,186,197,1);
+}
 /*Redes sociales*/
 #header .socials 
 {
@@ -49,3 +54,34 @@ body
 {
 	color: #bb0000;
 }
+/*Logotipo y teléfono*/
+
+#header .logo 
+{
+	max-width: 260px;
+	max-height: auto;
+}
+
+#header h3 	
+{
+	padding-top: 33px;
+}
+
+#header h3 i 
+{
+	margin-right: 8px;
+}
+
+/*END HEADER*/
+
+/*CAROUSEL*/
+
+#header .carousel-caption 
+{
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegitibility;
+}
+
+
+
+

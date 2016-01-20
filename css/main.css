@@ -13,10 +13,15 @@ body
 	padding-top: 50px;
 }
 
+.wrap 
+{
+	padding: 50px 0;
+}
+
 /*HEADER*/
 #header 
 {
-	background: rgba(170,186,197,1);
+	background: rgba(170,186,197,0.3);
 }
 /*Redes sociales*/
 #header .socials 
@@ -62,12 +67,12 @@ body
 	max-height: auto;
 }
 
-#header h3 	
+#header h2 	
 {
-	padding-top: 33px;
+	padding-top: 16px;
 }
 
-#header h3 i 
+#header h2 i 
 {
 	margin-right: 8px;
 }
@@ -82,6 +87,12 @@ body
 	text-rendering: optimizelegitibility;
 }
 
+/*PRESENTATION*/
+#presentation 
+{
+	text-align: center;
+	background: rgba(238,61,64,0.8);
+}
 
 
 

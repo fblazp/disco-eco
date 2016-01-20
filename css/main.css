@@ -21,7 +21,7 @@ body
 /*HEADER*/
 #header 
 {
-	background: rgba(170,186,197,0.3);
+	background: url('../img/bg-header.jpg') 50% 0 no-repeat fixed;
 }
 /*Redes sociales*/
 #header .socials 

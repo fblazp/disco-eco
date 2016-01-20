@@ -17,6 +17,10 @@ body
 {
 	padding: 50px 0;
 }
+.espacio-sup 
+{
+	padding-top: 30px;
+}
 .optimize 
 {
 	-webkit-font-smoothing: antialiased;

@@ -102,5 +102,15 @@ body
 	background: rgba(238,61,64,0.8);
 }
 
+#presentation h2 
+{
+	font-family: 'Fredoka One', cursive;
+}
+
+#presentation p 
+{
+	color: white;
+}
+
 
 

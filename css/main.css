@@ -113,7 +113,7 @@ body
 	text-align: center;
 }
 
-#presentation h2 
+#presentation h1 
 {
 	font-family: 'Fredoka One', cursive;
 }
@@ -128,4 +128,14 @@ body
 	color: black;
 }
 
+/*JUMBOTRON*/
+#jumbotron 
+{
+	text-align: center;
+}
+
+#jumbotron h2 
+{
+	font-family: 'Fredoka One', cursive;
+}
 

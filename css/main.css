@@ -26,6 +26,16 @@ body
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizelegitibility;
 }
+.text-left 
+{
+	text-align: left;
+}
+
+.container.espacio-sup 
+{
+	padding-left: 0;
+	padding-right: 0;
+}
 /*HEADER*/
 #header 
 {
@@ -112,6 +122,10 @@ body
 {
 	color: white;
 }
-
+/*media*/
+.text-left p 
+{
+	color: black;
+}
 
 

@@ -9,7 +9,7 @@
 /*Estilos generales*/
 body 
 {
-	background: rgba(0,0,0,0.1) url(../img/texture.png) top left repeat;
+	background: rgba(0,0,0,0.6) url(../img/texture.png) top left repeat;
 	padding-top: 50px;
 }
 
@@ -122,7 +122,7 @@ body
 {
 	color: white;
 }
-/*media*/
+/*media-LIST*/
 .text-left p 
 {
 	color: black;
@@ -135,16 +135,36 @@ body
 }
 #jumbotron .jumbotron 
 {
-	background: rgba(170,186,197,1) url('../img/jumb-header-b.jpg')50% 0 no-repeat;
+	background: url('../img/jumb-header-b.jpg')50% 0 no-repeat;
+	margin-bottom: 0;
 }
 #jumbotron h2 
 {
 	font-family: 'Fredoka One', cursive;
-	margin-bottom: 1em;
+	padding-bottom-bottom: 1em;
 }
 
 .jumbotron .container p 
 {
-	margin-bottom: 2em;
+	padding-bottom: 2em;
 	color: #000000;
+}
+
+/*MEDIA*/
+
+#media 
+{
+	background-color: rgba(170,186,197,0.8);
+}
+
+#media .lead 
+{
+	font-family: 'Permanent Marker', cursive;
+}
+
+/*FOOTER*/
+#footer 
+{
+	background: rgba(0,0,0,0.8);
+	color: white;
 }

@@ -133,9 +133,18 @@ body
 {
 	text-align: center;
 }
-
+#jumbotron .jumbotron 
+{
+	background: rgba(170,186,197,1) url('../img/jumb-header-b.jpg')50% 0 no-repeat;
+}
 #jumbotron h2 
 {
 	font-family: 'Fredoka One', cursive;
+	margin-bottom: 1em;
 }
 
+.jumbotron .container p 
+{
+	margin-bottom: 2em;
+	color: #000000;
+}

@@ -36,6 +36,12 @@ body
 	padding-left: 0;
 	padding-right: 0;
 }
+
+.markerFont 
+{
+	font-family: 'Permanent Marker', cursive;
+}
+
 /*HEADER*/
 #header 
 {
@@ -150,21 +156,8 @@ body
 	color: #000000;
 }
 
-/*MEDIA*/
-
-#media 
+#eventos 
 {
-	background-color: rgba(170,186,197,0.8);
-}
-
-#media .lead 
-{
-	font-family: 'Permanent Marker', cursive;
-}
-
-/*FOOTER*/
-#footer 
-{
-	background: rgba(0,0,0,0.8);
-	color: white;
+	background: rgba(170,186,197,0.8);
+	text-align: center;
 }

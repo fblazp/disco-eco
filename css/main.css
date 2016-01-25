@@ -9,7 +9,7 @@
 /*Estilos generales*/
 body 
 {
-	background: rgba(0,0,0,0.6) url(../img/texture.png) top left repeat;
+	background: rgba(255,255,255,0.6) url(../img/texture.png) top left repeat;
 	padding-top: 50px;
 }
 
@@ -160,4 +160,14 @@ body
 {
 	background: rgba(170,186,197,0.8);
 	text-align: center;
+}
+
+#videoPromo 
+{
+	text-align: center;
+}
+
+#footer 
+{
+	background: rgba(0,0,0,1);
 }

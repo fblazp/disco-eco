@@ -30,13 +30,19 @@ body
 {
 	text-align: left;
 }
-
+.text-white 
+{
+	color: white;
+}
 .container.espacio-sup 
 {
 	padding-left: 0;
 	padding-right: 0;
 }
-
+.fredokaFont 
+{
+	font-family: 'Fredoka One', cursive;
+}
 .markerFont 
 {
 	font-family: 'Permanent Marker', cursive;
@@ -119,11 +125,6 @@ body
 	text-align: center;
 }
 
-#presentation h1 
-{
-	font-family: 'Fredoka One', cursive;
-}
-
 #presentation p 
 {
 	color: white;
@@ -146,7 +147,6 @@ body
 }
 #jumbotron h2 
 {
-	font-family: 'Fredoka One', cursive;
 	padding-bottom-bottom: 1em;
 }
 

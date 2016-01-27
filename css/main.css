@@ -155,22 +155,28 @@ body
 	padding-bottom: 2em;
 	color: #000000;
 }
-
+/*Eventos*/
 #eventos 
 {
 	background: rgba(170,186,197,0.8);
 	text-align: center;
 }
-
+/*Video promocional*/
 #videoPromo 
 {
 	text-align: center;
 }
-
+/*Footer*/
 #footer 
 {
 	background: rgba(0,0,0,1);
 	color: white;
+}
+
+/*PÁGINA EQUIPOS*/
+#equipos 
+{
+	background: rgba(238,61,64,0.8);
 }
 
 /*ESTILOS BARRA ACEPTACIÓN DE COOKIES*/

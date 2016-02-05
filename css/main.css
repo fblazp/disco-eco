@@ -30,6 +30,10 @@ body
 {
 	text-align: left;
 }
+.text-center 
+{
+	text-align: center;
+}
 .text-white 
 {
 	color: white;
@@ -174,6 +178,11 @@ body
 }
 
 /*PÁGINA EQUIPOS*/
+
+.backEquip 
+{
+	background: rgba(170,186,197,1);
+}
 #equipos 
 {
 	background: rgba(238,61,64,0.8);

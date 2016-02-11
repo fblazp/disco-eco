@@ -43,6 +43,24 @@ body
 	padding-left: 0;
 	padding-right: 0;
 }
+/*Colores de fondo*/
+.back-white 
+{
+	background: rgba(255,255,255,1);
+}
+.back-black 
+{
+	background: rgba(0,0,0,1);
+}
+.back-cold 
+{
+	background: rgba(170,186,197,1);
+}
+.back-red 
+{
+	background: rgba(238,61,64,1);
+}
+/*Tipo de letra*/
 .fredokaFont 
 {
 	font-family: 'Fredoka One', cursive;

@@ -5,6 +5,7 @@
 
 		if(!isset($_POST['name']) ||
 		!isset($_POST['mail']) ||
+		!isset($_POST['telefono']) ||
 		!isset($_POST['consulta'])) {
 
 		echo "<b>Ocurrió un error y el formulario no ha sido enviado. </b><br />";
@@ -15,6 +16,7 @@
 		$email_message = "Detalles del formulario de contacto:\n\n";
 		$email_message = "Nombre: " . $_POST['name'] . "\n";
 		$email_message = "E-mail: " . $_POST['mail'] . "\n";
+		$email_message = "Teléfono: " . $_POST['telefono'] . "\n";
 		$email_message = "Comentarios: " . $_POST['consulta'] . "\n\n";
 
 

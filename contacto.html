@@ -135,7 +135,10 @@
                         <textarea class="form-control" name="consulta" id="texto" rows="3"></textarea>
                       </div><!--.form-group-->
                       <div class="form-group pull-right">
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <!--<button type="submit" class="btn btn-primary">Enviar</button>-->
+                        <button type="submit" id="sendButton" data-loading-text="Enviando..." class="btn btn-primary" autocomplete="off">
+                          Enviar
+                        </button>
                       </div><!--.form-group-->
                     </form>
                   </div><!--.espacio-sup-->
@@ -192,5 +195,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <!--scripts boton formulario-->
+    <script>
+      $('#sendButton').on('click', function () {
+        var $btn = $(this).button('loading')
+        // business logic...
+        $btn.button('reset')
+  })
+</script>
   </body>
 </html>

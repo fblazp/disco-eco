@@ -29,6 +29,5 @@
 
 		echo "¡El formulario se ha enviado con éxito!<br/>";
 		echo '<a href="index.html">Volver al inicio</a>';
-		}
 	}
 ?>

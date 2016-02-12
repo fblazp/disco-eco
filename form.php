@@ -3,7 +3,7 @@
 		$email_to = "fblazp@gmail.com";
 		$email_subject  = "Consulta Disco Eco";
 
-		if(!isset($_POST['first_name']) ||
+		if(!isset($_POST['name']) ||
 		!isset($_POST['mail']) ||
 		!isset($_POST['consulta'])) {
 

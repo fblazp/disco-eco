@@ -54,11 +54,11 @@ body
 }
 .back-cold 
 {
-	background: rgba(170,186,197,1);
+	background: rgba(170,186,197,0.8);
 }
 .back-red 
 {
-	background: rgba(238,61,64,1);
+	background: rgba(238,61,64,0.8);
 }
 /*Tipo de letra*/
 .fredokaFont 
@@ -197,14 +197,7 @@ body
 
 /*PÁGINA EQUIPOS*/
 
-.backEquip 
-{
-	background: rgba(170,186,197,1);
-}
-#equipos 
-{
-	background: rgba(238,61,64,0.8);
-}
+
 
 /*AGUA PARTY*/
 #aguaParty 

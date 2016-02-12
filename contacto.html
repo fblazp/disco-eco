@@ -107,18 +107,18 @@
                     <p>Dinos que tipo de evento quieres y enseguida nos pondremos en contacto contigo para ofrecerte la mejor solución.</p>
                   </div><!--.espacio-sup-->
                   <div class="espacio-sup">
-                    <form action="">
+                    <form action="form.php" method="post">
                       <div class="form-group">
                         <label for="name">Tu nombre</label>
-                        <input type="text" class="form-control" id="name" placeholder="Nombre" />
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Nombre" />
                       </div><!--.form-group-->
                       <div class="form-group">
                         <label for="mail">Tu email</label>
-                        <input type="email" class="form-control" id="mail" placeholder="Correo electrónico">
+                        <input type="email" class="form-control" id="mail" name="mail" placeholder="Correo electrónico">
                       </div><!--.form-group-->
                       <div class="form-group">
                         <label for="selector">Tipo de evento</label>
-                        <select class="form-control" id="selector">
+                        <select class="form-control" name="evento" id="selector">
                         <option>Discoteca móvil</option>
                         <option>Agua Party</option>
                         <option>Proyección cine</option>
@@ -128,7 +128,7 @@
                       </div><!--.form-group-->
                       <div class="form-group">
                         <label for="texto">Tu consulta</label>
-                        <textarea class="form-control" id="texto" rows="3"></textarea>
+                        <textarea class="form-control" name="consulta" id="texto" rows="3"></textarea>
                       </div><!--.form-group-->
                       <div class="form-group pull-right">
                         <button type="submit" class="btn btn-primary">Enviar</button>

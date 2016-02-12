@@ -1,5 +1,5 @@
 <?php 
-	if(isset($_POST[])){
+	if(isset($_POST['mail'])){
 		$email_to = "fblazp@gmail.com";
 		$email_subject = ="Consulta Disco Eco";
 

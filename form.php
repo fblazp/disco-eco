@@ -1,5 +1,6 @@
 <?php 
 	if(isset($_POST['mail'])){
+		$headers = $_POST['name'];
 		$email_to = "fblazp@gmail.com";
 		$email_subject  = "Consulta Disco Eco";
 
@@ -14,10 +15,10 @@
 		}
 
 		$email_message = "Detalles del formulario de contacto:\n\n";
-		$email_message = "Nombre: " . $_POST['name'] . "\n";
-		$email_message = "E-mail: " . $_POST['mail'] . "\n";
-		$email_message = "Teléfono: " . $_POST['telefono'] . "\n";
-		$email_message = "Comentarios: " . $_POST['consulta'] . "\n\n";
+		$email_message .= "Nombre: " . $_POST['name'] . "\n";
+		$email_message .= "E-mail: " . $_POST['mail'] . "\n";
+		$email_message .= "Teléfono: " . $_POST['telefono'] . "\n";
+		$email_message .= "Comentarios: " . $_POST['consulta'] . "\n\n";
 
 
 		// Ahora se envía el e-mail usando la función mail() de PHP

@@ -12,7 +12,7 @@
 
 		echo "<b>Ocurrió un error y el formulario no ha sido enviado. </b><br />";
 		echo "Por favor, vuelva atrás y verifique la información ingresada<br />";
-		echo '<a href="contacto.html">Volver</a>'
+		echo '<a href="contacto.html">Volver</a>';
 		die();
 		}
 

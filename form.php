@@ -1,7 +1,7 @@
 <?php 
 	if(isset($_POST['mail'])){
 		$headers = $_POST['name'];
-		$email_to = "fblazp@gmail.com";
+		$email_to = "radioeco@hotmail.com";
 		$email_subject  = "Consulta Disco Eco";
 
 		if(!isset($_POST['name']) ||

@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>discoteca móvil Disco Eco - Equipo y Montajes</title>
-    <meta name="description" content="Montajes para exterior e interior, disponemos de camión escenario y generador electrico"/>
+    <title>discoteca móvil Disco Eco - Gira Disco Eco 2016</title>
+    <meta name="description" content="Estas son las fechas para la temporada 2016 de Disco Eco"/>
     <link rel="icon" href="favicon.ico">
     <!--Normalize-->
     <link rel="stylesheet" href="css/normalize.css" />
@@ -27,8 +27,8 @@
   <body>
     <!--HEADER-->
     <header id="header">
-        <!--menú de navegación-->
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+      <!--menú de navegación-->
+      <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navIndex">
@@ -42,7 +42,7 @@
           <div class="collapse navbar-collapse navIndex">
             <ul class="nav navbar-nav">
               <li><a href="equipos.html">Equipo y Montaje</a></li>
-              <li><a href="#">Agua Party 2016</a></li>
+              <li><a href="agua.html">Agua Party 2016</a></li>
               <li><a href="contacto.php">Contacto</a></li>
             </ul><!--.nav-->
             <div class="pull-right socials">
@@ -56,36 +56,32 @@
           </div><!--.collapse-->
         </div><!--.container-->
       </nav><!--.navbar-->
-      <!--logo y telefono-->
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
             <div class="row">
               <div class="col-sm-3 col-sm-offset-1">
-                <a href="index.html"><img class="img-responsive logo" src="img/logo_retDisplay.png" alt="discoteca móvil Disco Eco"></a>
+                <a href="index.html"><img class="img-responsive logo" src="img/logo_retDisplay.png" alt="discoteca móvil Disco Eco" /></a>
               </div><!--.col-sm-5-->
               <div class="col-sm-4 col-sm-offset-4 hidden-xs">
                 <h2 class="optimize pull-right"><i class="fa fa-phone-square"></i>920 365 230</h2>
               </div><!--.col-sm-5--> 
             </div><!--.row-->
+            <div class="espacio-sup"></div>
           </div><!--col-sm-12-->
         </div><!--.row-->
       </div><!--.container-->
-      <div class="espacio-sup"></div>
     </header><!--#header-->
-    <!--END HEADER-->
-    <!--EQUIPOS-->
-    <section id="aguaParty" class="wrap">
-        <div class="container">
-          <div class="row">
-           <div class="col-sm-12">
-             <img src="img/agua-party.jpg" alt="Pasacalles de música y agua de Disco Eco" class="img-responsive">
-           </div> 
-          </div><!--.row-->  
-        </div><!--.container-->
-    </section><!--#aguaParty-->
-    <!-- END EQUIPOS-->
-    <!--FOOTER-->
+    <section id="events" class="wrap back-red">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="fredokaFont">Calendario 2016</h2>
+          </div><!--.col-sm-12-->
+        </div><!--.row-->
+      </div><!--.container-->
+    </section><!--#events-->
+        <!--FOOTER-->
     <footer id="footer" class="espacio-sup">
       <div class="container">
         <div class="row">
@@ -120,8 +116,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <!--Analitycs-->
-    <script>
+<!--Google Analytics-->
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)

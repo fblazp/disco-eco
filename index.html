@@ -10,7 +10,8 @@
     <!--Normalize-->
     <link rel="stylesheet" href="css/normalize.css" />
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <!--Google fonts-->
     <link href='https://fonts.googleapis.com/css?family=Fredoka+One|Permanent+Marker' rel='stylesheet' type='text/css'>
     <!--Fonts awesome-->
@@ -43,7 +44,7 @@
             <ul class="nav navbar-nav">
               <li><a href="equipos.html">Equipo y Montaje</a></li>
               <li><a href="agua.html">Agua Party 2016</a></li>
-              <li><a href="contacto.html">Contacto</a></li>
+              <li><a href="contacto.php">Contacto</a></li>
             </ul><!--.nav-->
             <div class="pull-right socials">
               <p>
@@ -82,24 +83,16 @@
           </ol><!--.carousel-indicators-->
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img src="img/slide/aguapartySlide-b.jpg" alt="Agua Party, pasacalles de música y agua">
+              <img src="img/slide/aguapartySlide-b.jpg" alt="Agua Party, pasacalles de música y agua"><!--Agua Party-->
             </div><!--.item-->
             <div class="item">
-              <img src="img/slide/cine-b.jpg" alt="">
-              <div class="carousel-caption">
-                <h3></h3>
-                <p></p>
-              </div><!--.carousel-caption-->
+              <img src="img/slide/cine-b.jpg" alt="Proyecciones de cine en 5.1"><!--Proyecciones cine-->
             </div><!--.item-->
             <div class="item">
-              <img src="img/slide/aguapartySlide-b.jpg" alt="">
-              <div class="carousel-caption">
-                <h3></h3>
-                <p></p>
-              </div><!--.carousel-caption-->
+              <img src="img/slide/aguapartySlide-b.jpg" alt="Discoteca móvil para todos los públicos">
             </div><!--.item-->
             <div class="item">
-              <img src="img/slide/aguapartySlide-b.jpg" alt="">
+              <img src="img/slide/aguapartySlide-b.jpg" alt="Te esperamos con la mejor música y diversión">
               <div class="carousel-caption">
                 <h3></h3>
                 <p></p>
@@ -221,13 +214,13 @@
               <div class="media">
                 <div class="media-left">
                   <a href="#">
-                    <img class="media-object" src="img/small-media-2.jpg" alt="Últimas fotos añadidas a Facebook">
+                    <img class="media-object" src="img/small-media-2.jpg" alt="Calendario de eventos">
                   </a>
                 </div><!--.media-left-->
                 <div class="media-body">
                   <h4 class="media-heading">Calendario 2016</h4>
                   <p>Estos son los eventos de este año</p>
-                  <p class="pull-right"><a href="#" class="btn btn-primary btn-xs">Ir a Calendario &raquo;</a></p>
+                  <p class="pull-right"><a href="calendar.php" class="btn btn-primary btn-xs">Ir a Calendario &raquo;</a></p>
                 </div><!--.media-body-->
               </div><!--.media-->
             </article>
@@ -293,7 +286,12 @@ Pulsa OK para continuar. <a href="javascript:void(0);" onclick="var expiration =
     <script src="js/bootstrap.min.js"></script>
     <!--carousel options-->
     <script>
-
+    $('.carousel').carousel({
+      interval: 2000
+      pause: "hover"
+      wrap: true
+      keyboard true
+      })
     </script>
     <!-- Gestión de cookies-->
 <script type='text/javascript'>function setCookie(name,value,expires,path,domain,secure){document.cookie=name+"="+escape(value)+((expires==null)?"":"; expires="+expires.toGMTString())+((path==null)?"":"; path="+path)+((domain==null)?"":"; domain="+domain)+((secure==null)?"":"; secure")}function getCookie(name){var cname=name+"=";var dc=document.cookie;if(dc.length>0){begin=dc.indexOf(cname);if(begin!=-1){begin+=cname.length;end=dc.indexOf(";",begin);if(end==-1)end=dc.length;return unescape(dc.substring(begin,end))}}return null}function delCookie(name,path,domain){if(getCookie(name)){document.cookie=name+"="+((path==null)?"":"; path="+path)+((domain==null)?"":"; domain="+domain)+"; expires=Thu, 01-Jan-70 00:00:01 GMT"}}</script>

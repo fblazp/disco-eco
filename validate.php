@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>discoteca móvil Disco Eco - Equipo y Montajes</title>
-    <meta name="description" content="Montajes para exterior e interior, disponemos de camión escenario y generador electrico"/>
+    <title>discoteca móvil Disco Eco - Ponemos ritmo a tus fiestas</title>
+    <meta name="description" content="Fiestas para ayuntamientos, asociaciones, fiestas privadas, karaoke, pantalla gigante y mucho más..."/>
     <link rel="icon" href="favicon.ico">
     <!--Normalize-->
     <link rel="stylesheet" href="css/normalize.css" />
@@ -27,8 +27,8 @@
   <body>
     <!--HEADER-->
     <header id="header">
-        <!--menú de navegación-->
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+      <!--menú de navegación-->
+      <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navIndex">
@@ -42,7 +42,7 @@
           <div class="collapse navbar-collapse navIndex">
             <ul class="nav navbar-nav">
               <li><a href="equipos.html">Equipo y Montaje</a></li>
-              <li><a href="#">Agua Party 2016</a></li>
+              <li><a href="agua.html">Agua Party 2016</a></li>
               <li><a href="contacto.php">Contacto</a></li>
             </ul><!--.nav-->
             <div class="pull-right socials">
@@ -56,7 +56,6 @@
           </div><!--.collapse-->
         </div><!--.container-->
       </nav><!--.navbar-->
-      <!--logo y telefono-->
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -71,20 +70,52 @@
           </div><!--col-sm-12-->
         </div><!--.row-->
       </div><!--.container-->
-      <div class="espacio-sup"></div>
     </header><!--#header-->
-    <!--END HEADER-->
-    <!--EQUIPOS-->
-    <section id="aguaParty" class="wrap">
-        <div class="container">
-          <div class="row">
-           <div class="col-sm-12">
-             <img src="img/agua-party.jpg" alt="Pasacalles de música y agua de Disco Eco" class="img-responsive">
-           </div> 
-          </div><!--.row-->  
-        </div><!--.container-->
-    </section><!--#aguaParty-->
-    <!-- END EQUIPOS-->
+    <div class="clearfix"></div>
+    <!--FIN HEADER-->
+    <section id="validar" class="wrap">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-sm-12">
+            <?php 
+              if(isset($_POST['mail'])){
+            $headers = $_POST['name'];
+            $email_to = "fblazp@gmail.com";
+            $email_subject  = "Consulta Disco Eco";
+
+            if(!isset($_POST['name']) ||
+            !isset($_POST['mail']) ||
+            !isset($_POST['telefono']) ||
+            !isset($_POST['evento']) ||
+            !isset($_POST['consulta'])) {
+
+            print_r('<div class="alert alert-danger" role="alert"><strong>Error</strong>. Ha habido un problema al enviar el formulario</div>');
+            
+            die();
+            }
+
+            $email_message = "Detalles del formulario de contacto:\n\n";
+            $email_message .= "Nombre: " . $_POST['name'] . "\n";
+            $email_message .= "E-mail: " . $_POST['mail'] . "\n";
+            $email_message .= "Tipo de evento: " . $_POST['evento'] . "\n";
+            $email_message .= "Teléfono: " . $_POST['telefono'] . "\n";
+            $email_message .= "Comentarios: " . $_POST['consulta'] . "\n\n";
+
+
+            // Ahora se envía el e-mail usando la función mail() de PHP
+            $headers = 'From: '.$email_from."\r\n".
+            'Reply-To: '.$email_from."\r\n" .
+            'X-Mailer: PHP/' . phpversion();
+            @mail($email_to, $email_subject, $email_message, $headers);
+
+            print_r('<div class="alert alert-success" role="alert"><strong>¡Muchas gracias!</strong>. El mensaje ha sido enviado</div>');
+          
+          }
+            ?>
+          </div><!--.col-sm-12-->
+        </div><!--.row-->
+      </div><!--.container-->
+    </section><!--#validar-->
     <!--FOOTER-->
     <footer id="footer" class="espacio-sup">
       <div class="container">
@@ -116,20 +147,9 @@
       </div><!--.container-->
     </footer><!--#footer-->
     <!--END FOOTER-->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <!--Analitycs-->
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-73705464-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
   </body>
 </html>

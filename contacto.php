@@ -43,7 +43,7 @@
             <ul class="nav navbar-nav">
               <li><a href="equipos.html">Equipo y Montaje</a></li>
               <li><a href="agua.html">Agua Party 2016</a></li>
-              <li><a href="#">Contacto</a></li>
+              <li><a href="contacto.php">Contacto</a></li>
             </ul><!--.nav-->
             <div class="pull-right socials">
               <p>
@@ -99,6 +99,46 @@
       <section id="form_map" class="back-white">
         <div class="container">
           <div class="row wrap">
+                <div class="col-sm-8 col-sm-offset-2">
+                  <?php 
+              if(isset($_POST['mail'])){
+            $headers = $_POST['name'];
+            $email_to = "radioeco@hotmail.com";
+            $email_subject  = "Consulta Disco Eco";
+
+            if(!isset($_POST['name']) ||
+            !isset($_POST['mail']) ||
+            !isset($_POST['telefono']) ||
+            !isset($_POST['evento']) ||
+            !isset($_POST['consulta'])) {
+
+            print_r('<div class="alert alert-danger" role="alert"><p><strong>Error</strong>. Ha habido un problema al enviar el formulario. <a href="contacto.php">Reintentar</a></p></div>');
+            
+            die();
+            }
+
+            $email_message = "Detalles del formulario de contacto:\n\n";
+            $email_message .= "Nombre: " . $_POST['name'] . "\n";
+            $email_message .= "E-mail: " . $_POST['mail'] . "\n";
+            $email_message .= "Tipo de evento: " . $_POST['evento'] . "\n";
+            $email_message .= "Teléfono: " . $_POST['telefono'] . "\n";
+            $email_message .= "Comentarios: " . $_POST['consulta'] . "\n\n";
+
+
+            // Ahora se envía el e-mail usando la función mail() de PHP
+            $headers = 'From: '.$email_from."\r\n".
+            'Reply-To: '.$email_from."\r\n" .
+            'X-Mailer: PHP/' . phpversion();
+            @mail($email_to, $email_subject, $email_message, $headers);
+
+            print_r('<div class="alert alert-success" role="alert"><strong>¡Muchas gracias!</strong>. El mensaje ha sido enviado, pronto nos pondremos en contacto contigo</div>');
+            print_r('<div class="col-sm-12 text-center"><p class="lead"><a href="index.html">Volver al inicio</a></p></div>');
+          
+          }
+            ?>
+                </div><!--.col-sm-12-->
+              </div><!--.row-->
+          <div class="row wrap">
             <div class="col-sm-6">
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
@@ -107,7 +147,7 @@
                     <p>Dinos que tipo de evento quieres y enseguida nos pondremos en contacto contigo para ofrecerte la mejor solución.</p>
                   </div><!--.espacio-sup-->
                   <div class="espacio-sup">
-                    <form action="form.php" method="post">
+                    <form action="contacto.php" method="post">
                       <div class="form-group">
                         <label for="name">Tu nombre</label>
                         <input type="text" class="form-control" name="name" id="name" placeholder="Nombre" />

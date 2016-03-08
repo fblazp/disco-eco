@@ -139,6 +139,12 @@ body
 
 /*CAROUSEL*/
 
+.carouselContaier 
+{
+	max-width: 1200px;
+	max-height: 545px;
+}
+
 #header .carousel-caption 
 {
 	-webkit-font-smoothing: antialiased;

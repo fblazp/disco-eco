@@ -229,3 +229,25 @@ body
 {
 	background: rgba(170,186,197,0.8);
 }
+
+/*ESTILOS BOTÓN IR ARRIBA*/
+.go-top {
+	position: fixed;
+	bottom: 3em;
+	border-radius: 50%;
+	right: 3em;
+	text-decoration: none;
+	color: #fff;
+	background-color: rgba(150, 150, 150, 0.6);
+	font-size: 12px;
+	padding: 1em 1em 1.2em 1em;
+	display: none;
+}
+
+.go-top:hover {
+	background-color: rgba(150, 150, 150, 0.8);
+	text-decoration: none;
+	color: #fff;
+}
+
+

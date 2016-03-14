@@ -282,6 +282,9 @@
           </div><!--.col-sm-5-->
         </div><!--.row-->
       </div><!--.container-->
+      <!--boton ir arriba-->
+      <a class="go-top" href="#" title="Ir arriba"><i class="fa fa-chevron-up fa-3x"></i></a>
+      <!--fin boton ir arriba-->
     </footer><!--#footer-->
     <!--END FOOTER-->
     <div id="barracookies">
@@ -325,5 +328,25 @@ document.getElementById("barracookies").style.display="block"; }
   ga('send', 'pageview');
 
 </script>
+<!--script boton ir arriba-->
+<script>
+      $(document).ready(function() {
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 320) {
+            $('.go-top').fadeIn(200);
+          } else {
+            $('.go-top').fadeOut(200);
+          }
+        });
+   
+        // Animate the scroll to top
+        $('.go-top').click(function(event) {
+          event.preventDefault();
+   
+          $('html, body').animate({scrollTop: 0}, 300);
+        })
+      });
+    </script>
   </body>
 </html>

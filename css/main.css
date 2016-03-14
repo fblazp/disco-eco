@@ -250,4 +250,11 @@ body
 	color: #fff;
 }
 
+.go-top:active 
+{
+	text-decoration: none;
+	color: #fff;
+	border: none;
+}
+
 

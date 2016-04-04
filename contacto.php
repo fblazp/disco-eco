@@ -85,7 +85,7 @@
           </div><!--.row-->
           <div class="row espacio-sup">
             <div class="col-md-4 text-center">
-              <p class="lead"><i class="fa fa-envelope"></i> radioeco@hotmail.com</p>
+              <p class="lead"><i class="fa fa-envelope"></i> info@discoeco.es</p>
             </div><!--.col-md-4-->
             <div class="col-md-4 text-center">
               <p class="lead"><i class="fa fa-mobile fa-lg"></i> 649 645 835</p>
@@ -103,7 +103,7 @@
                   <?php 
               if(isset($_POST['mail'])){
             $headers = $_POST['name'];
-            $email_to = "radioeco@hotmail.com";
+            $email_to = "info@discoeco.es";
             $email_subject  = "Consulta Disco Eco";
 
             if(!isset($_POST['name']) ||
@@ -223,7 +223,7 @@
         <div class="espacio-sup"></div>
         <div class="row">
           <div class="col-sm-7">
-            <p>Eventos Eco Móvil 2016 | Travesía de la Plaza | 05151 Diego Álvaro (Ávila) | radioeco@hotmail.com</p>
+            <p>Eventos Eco Móvil 2016 | Travesía de la Plaza | 05151 Diego Álvaro (Ávila) | info@discoeco.es</p>
           </div><!--.col-sm-7-->
           <div class="col-sm-5">
             <p class="pull-right">

@@ -125,7 +125,7 @@
             </div><!--.col-sm-4-->
             <div class="col-sm-4 espacio-sup">
               <div class="thumbnail">
-                <a href="img/equip-2-full.jpg" data-toggle="modal" data-target="#modalImg2" title="Ampliar imagen"><img src="img/equip-2-full.jpg" class="img-responsive" alt="Montaje completo" /></a>
+                <a href="img/equip-2-full.jpg" data-lightbox="galeria" data-title="Camión escenario" title="Ampliar imagen"><img src="img/equip-2-full.jpg" class="img-responsive" alt="Montaje completo" /></a>
                 <div class="caption">
                   <h3>Camión escenario</h3>
                   <p><i class="fa fa-check-square-o fa-lg"></i> Incluye efectos de iluminación.</p>
@@ -137,7 +137,7 @@
             </div><!--.col-sm-4-->
             <div class="col-sm-4 espacio-sup">
               <div class="thumbnail">
-                <a href="#" data-toggle="modal" data-target="#modalImg3" title="Ampliar imagen"><img src="img/equip-3.jpg" class="img-responsive" alt="Montaje completo" /></a>
+                <a href="img/equip-3-full.jpg" data-lightbox="galeria" data-title="Montaje en interior" title="Ampliar imagen"><img src="img/equip-3-full.jpg" class="img-responsive" alt="Montaje para cualquier tipo de local interior o exterior" /></a>
                 <div class="caption">
                   <h3>Montaje en interior</h3>
                   <p><i class="fa fa-check-square-o fa-lg"></i> Montaje con o sin ilumación.</p>
@@ -174,7 +174,7 @@
         <div class="espacio-sup"></div>
         <div class="row">
           <div class="col-sm-7">
-            <p>Eventos Eco Móvil 2016 | Travesía de la Plaza | 05151 Diego Álvaro (Ávila) | radioeco@hotmail.com</p>
+            <p>Eventos Eco Móvil 2016 | Travesía de la Plaza | 05151 Diego Álvaro (Ávila) | info@discoeco.es</p>
           </div><!--.col-sm-7-->
           <div class="col-sm-5">
             <p class="pull-right">
@@ -184,12 +184,16 @@
           </div><!--.col-sm-5-->
         </div><!--.row-->
       </div><!--.container-->
+      <!--boton ir arriba-->
+      <a class="go-top" href="#" title="Ir arriba"><i class="fa fa-chevron-up fa-3x"></i></a>
+      <!--fin boton ir arriba-->
     </footer><!--#footer-->
     <!--END FOOTER-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <!--Lightbox script-->
     <script src="dist/js/lightbox.min.js"></script>
     <!--Analitycs-->
     <script>
@@ -202,5 +206,25 @@
   ga('send', 'pageview');
 
 </script>
+<!--script boton ir arriba-->
+<script>
+      $(document).ready(function() {
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 320) {
+            $('.go-top').fadeIn(200);
+          } else {
+            $('.go-top').fadeOut(200);
+          }
+        });
+   
+        // Animate the scroll to top
+        $('.go-top').click(function(event) {
+          event.preventDefault();
+   
+          $('html, body').animate({scrollTop: 0}, 300);
+        })
+      });
+    </script>
   </body>
 </html>

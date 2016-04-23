@@ -62,7 +62,7 @@
           <div class="col-sm-12">
             <div class="row">
               <div class="col-sm-3 col-sm-offset-1">
-                <a href="index.html"><img class="img-responsive logo" src="img/logo_retDisplay.png" alt="discoteca móvil Disco Eco"></a>
+                <a href="index.html" title="inicio"><img class="img-responsive logo" src="img/logo_retDisplay.png" alt="discoteca móvil Disco Eco"></a>
               </div><!--.col-sm-5-->
               <div class="col-sm-4 col-sm-offset-4 hidden-xs">
                 <h2 class="optimize pull-right"><i class="fa fa-phone-square"></i>920 365 230</h2>
@@ -85,7 +85,7 @@
           </div><!--.row-->
           <div class="row espacio-sup">
             <div class="col-md-4 text-center">
-              <p class="lead"><i class="fa fa-envelope"></i> radioeco@hotmail.com</p>
+              <p class="lead"><i class="fa fa-envelope"></i> info@discoeco.es</p>
             </div><!--.col-md-4-->
             <div class="col-md-4 text-center">
               <p class="lead"><i class="fa fa-mobile fa-lg"></i> 649 645 835</p>
@@ -103,7 +103,7 @@
                   <?php 
               if(isset($_POST['mail'])){
             $headers = $_POST['name'];
-            $email_to = "radioeco@hotmail.com";
+            $email_to = "info@discoeco.es";
             $email_subject  = "Consulta Disco Eco";
 
             if(!isset($_POST['name']) ||
@@ -223,7 +223,7 @@
         <div class="espacio-sup"></div>
         <div class="row">
           <div class="col-sm-7">
-            <p>Eventos Eco Móvil 2016 | Travesía de la Plaza | 05151 Diego Álvaro (Ávila) | radioeco@hotmail.com</p>
+            <p>Eventos Eco Móvil 2016 | Travesía de la Plaza | 05151 Diego Álvaro (Ávila) | info@discoeco.es</p>
           </div><!--.col-sm-7-->
           <div class="col-sm-5">
             <p class="pull-right">
@@ -233,6 +233,9 @@
           </div><!--.col-sm-5-->
         </div><!--.row-->
       </div><!--.container-->
+      <!--boton ir arriba-->
+      <a class="go-top" href="#" title="Ir arriba"><i class="fa fa-chevron-up fa-3x"></i></a>
+      <!--fin boton ir arriba-->
     </footer><!--#footer-->
     <!--END FOOTER-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -258,5 +261,25 @@
   ga('send', 'pageview');
 
 </script>
+<!--script boton ir arriba-->
+<script>
+      $(document).ready(function() {
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 320) {
+            $('.go-top').fadeIn(200);
+          } else {
+            $('.go-top').fadeOut(200);
+          }
+        });
+   
+        // Animate the scroll to top
+        $('.go-top').click(function(event) {
+          event.preventDefault();
+   
+          $('html, body').animate({scrollTop: 0}, 300);
+        })
+      });
+    </script>
   </body>
 </html>

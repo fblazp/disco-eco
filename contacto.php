@@ -41,9 +41,9 @@
           </div><!--.navbar-header-->
           <div class="collapse navbar-collapse navIndex">
             <ul class="nav navbar-nav">
-              <li><a href="equipos.html">Equipo y Montaje</a></li>
-              <li><a href="agua.html">Agua Party 2016</a></li>
-              <li><a href="contacto.php">Contacto</a></li>
+              <li><a href="equipos">Equipo y Montaje</a></li>
+              <li><a href="agua">Agua Party 2016</a></li>
+              <li><a href="contacto">Contacto</a></li>
             </ul><!--.nav-->
             <div class="pull-right socials">
               <p>
@@ -62,7 +62,7 @@
           <div class="col-sm-12">
             <div class="row">
               <div class="col-sm-3 col-sm-offset-1">
-                <a href="index.html" title="inicio"><img class="img-responsive logo" src="img/logo_retDisplay.png" alt="discoteca móvil Disco Eco"></a>
+                <a href="index" title="inicio"><img class="img-responsive logo" src="img/logo_retDisplay.png" alt="discoteca móvil Disco Eco"></a>
               </div><!--.col-sm-5-->
               <div class="col-sm-4 col-sm-offset-4 hidden-xs">
                 <h2 class="optimize pull-right"><i class="fa fa-phone-square"></i>920 365 230</h2>
@@ -112,7 +112,7 @@
             !isset($_POST['evento']) ||
             !isset($_POST['consulta'])) {
 
-            print_r('<div class="alert alert-danger" role="alert"><p><strong>Error</strong>. Ha habido un problema al enviar el formulario. <a href="contacto.php">Reintentar</a></p></div>');
+            print_r('<div class="alert alert-danger" role="alert"><p><strong>Error</strong>. Ha habido un problema al enviar el formulario. <a href="contacto">Reintentar</a></p></div>');
             
             die();
             }
@@ -132,7 +132,7 @@
             @mail($email_to, $email_subject, $email_message, $headers);
 
             print_r('<div class="alert alert-success" role="alert"><strong>¡Muchas gracias!</strong>. El mensaje ha sido enviado, pronto nos pondremos en contacto contigo</div>');
-            print_r('<div class="col-sm-12 text-center"><p class="lead"><a href="index.html">Volver al inicio</a></p></div>');
+            print_r('<div class="col-sm-12 text-center"><p class="lead"><a href="index">Volver al inicio</a></p></div>');
           
           }
             ?>
@@ -147,7 +147,7 @@
                     <p>Dinos que tipo de evento quieres y enseguida nos pondremos en contacto contigo para ofrecerte la mejor solución.</p>
                   </div><!--.espacio-sup-->
                   <div class="espacio-sup">
-                    <form action="contacto.php" method="post">
+                    <form action="contacto" method="post">
                       <div class="form-group">
                         <label for="name">Tu nombre</label>
                         <input type="text" class="form-control" name="name" id="name" placeholder="Nombre" />
@@ -227,7 +227,7 @@
           </div><!--.col-sm-7-->
           <div class="col-sm-5">
             <p class="pull-right">
-              <a href="cookies.html">Política de cookies</a> | 
+              <a href="cookies">Política de cookies</a> | 
               <a href="http://www.agpd.es/portalwebAGPD/canaldocumentacion/publicaciones/common/Guias/Guia_Cookies.pdf" target="_blank">Política de privacidad</a>
             </p><!--.pull-right-->
           </div><!--.col-sm-5-->
